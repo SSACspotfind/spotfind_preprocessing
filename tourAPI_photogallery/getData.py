@@ -1,7 +1,7 @@
 import requests
 import urllib.request
 import os
-from tourAPI_photogallery.resource.keys import ServiceKey
+from resource_data.keys import ServiceKey
 
 
 def geturl(pageno):
@@ -24,9 +24,9 @@ def maketourImg(count , data):
         print(data['response']['body']['items']['item'][i]['galWebImageUrl'])
         image_url = data['response']['body']['items']['item'][i]['galWebImageUrl']
         # 폴더 생성하기
-        os.makedirs('./tourapi_img/' + image_title + '/', exist_ok=True)
+        os.makedirs('../imgs/tourapi_img/' + image_title + '/', exist_ok=True)
         # image 파일 저장
-        urllib.request.urlretrieve(image_url, './tourapi_img/' + image_title + '/' + image_title + '_main.jpg')
+        urllib.request.urlretrieve(image_url, '../imgs/tourapi_img/' + image_title + '/' + image_title + '_main.jpg')
 
 if __name__ == '__main__':
     geturl(1)

@@ -1,6 +1,12 @@
-tourAPI_photogallery/tourapi_img
-tourAPI_photogallery/resource
+imgs/tourapi_img
+resource_data
 tourAPI_photogallery/__pycache__
 tourAPI_photogallery/.pytest_cache
+
+selenium_crawling/__pycache__
+selenium_crawling/.pytest_cache
+selenium_crawling/chromedriver.exe
+
+selenium_crawling_instagram
 
 .idea
