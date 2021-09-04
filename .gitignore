@@ -8,5 +8,7 @@ selenium_crawling/.pytest_cache
 selenium_crawling/chromedriver.exe
 
 selenium_crawling_instagram
+Test
+tourAPI_photogallery/관광공사API정리.xlsx
 
 .idea

@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 import urllib.request
-from resource_data.keys import Instagram_Id ,Instagram_Pw
+from PreProcessing.resource_data.keys import Instagram_Id ,Instagram_Pw
 
 
 def instagramGetImg(searchKeyword,selectElement, getImgCount):

@@ -1,6 +1,6 @@
 
-from selenium_crawling.google_crawling import googleImageSearch
-from selenium_crawling.instagram_crawling import instagramGetImg
+from PreProcessing.selenium_crawling.google_crawling import googleImageSearch
+from PreProcessing.selenium_crawling.instagram_crawling import instagramGetImg
 import threading
 
 def getGI_Imgs(keyword ,selectElement ,  count):
@@ -43,7 +43,7 @@ if __name__ == '__main__':
 # '보발재' , '문의문화재단지' , '솔밭공원' , '도담삼봉' , '구담봉'
 
 # 경상북도 Gyeongsangbuk
-# '월지' , '청량사탑' , '반월성' , '대왕암' , '양동마을' , '양동마을'
+# '월지' , '청량사탑' , '반월성' , '대왕암' , '양동마을'
 
 # 경상남도 Gyeongsangnam
 # '소매물도 등대' , '보리암' , '황매산' , '장사도해상공원' ,'대암산'

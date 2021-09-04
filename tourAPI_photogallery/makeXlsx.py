@@ -29,6 +29,7 @@ def search(searKeword , fristXlsx):
     encodSearKeword = urlEncoding(searKeword)
     print(encodSearKeword)
     dataJson = "http://api.visitkorea.or.kr/openapi/service/rest/PhotoGalleryService/gallerySearchList?keyword=" + encodSearKeword + "&ServiceKey=" + ServiceKey + "&numOfRows=10&pageNo=" + str(1) + "&MobileOS=ETC&MobileApp=TestApp&_type=json"
+
     #print(dataJson)
     response = requests.get(dataJson)
     data = response.json()
@@ -99,7 +100,8 @@ def Exl_data(wb, sheet, galTitle, galPhotographyLocation, galSearchKeyword, galV
     # 파일 저장
     wb.save("관광공사API정리.xlsx")
 
+if __name__ == '__main_':
+    tourList = ["경기도","강원도","충청남도","충청북도","경상북도","경상남도","전라북도","전라남도","서울특별시", "인천광역시", "대전광역시", "대구광역시", "광주광역시", "울산광역시", "부산광역시"]
 
-if __name__ == '__main__':
-    tourList =["경기도","강원도","충청남도","충청북도","경상북도","경상남도","전라북도","전라남도","서울특별시","인천광역시","대전광역시","대구광역시","광주광역시","울산광역시","부산광역시"]
+    tourList2 = ["서울특별시", "인천광역시", "대전광역시", "대구광역시", "광주광역시", "울산광역시", "부산광역시"]
     makeXlsx(tourList)
